@@ -100,6 +100,7 @@ export const GridContainerStyled = styled.div`
     figure {
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: minmax(0, 0.7fr) minmax(0, 1fr);
       height: 315px;
     }
   }
@@ -156,7 +157,6 @@ export const GridContainerStyled = styled.div`
     figure {
       grid-template-columns: 1fr;
       grid-auto-rows: max-content;
-      grid-template-rows: minmax(0, 0.7fr) minmax(0, 1fr);
       height: 500px;
     }
   }

@@ -28,8 +28,9 @@ export const HomePage = () => {
     <Container width={"1200px"}>
       <GridContainer>
         {articleData?.items?.map((article, index) => {
+          const className = index < 9 ? `grid-item grid-item-${index}` : "";
           return (
-            <GridItem index={index} key={article.sys.id} className={`grid-item grid-item-${index}`}>
+            <GridItem index={index} key={article.sys.id} className={className}>
               <Article>
                 <NavLink to={`/details/${article.sys.id}`} key={article.sys.id}>
                   <figure>
