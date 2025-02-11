@@ -25,31 +25,11 @@ export const NavbarStyled = styled.nav`
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 75px; /* Adjust based on your header height */
+    top: 75px;
     left: 0;
     right: 0;
     z-index: 1000;
     transition: all 0.3s ease-in-out;
-
-    @media screen and (max-width: ${(props) => props.theme.grid.breakpoints.s}) {
-      padding: 0.5rem 1rem;
-      li {
-        background-color: rgb(50, 50, 50);
-        padding: 1rem;
-        margin: 0.5rem 0;
-        border-radius: 10px;
-        transition: background-color 0.3s ease;
-        border: none;
-
-        a {
-          color: ${(props) => props.theme.color.white};
-        }
-
-        &:hover {
-          background-color: rgb(70, 70, 70);
-        }
-      }
-    }
 
     li {
       display: flex;
@@ -62,6 +42,27 @@ export const NavbarStyled = styled.nav`
     }
     li:last-of-type {
       border-right: 2px solid ${(props) => props.theme.color.black};
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.grid.breakpoints.s}) {
+      padding: 0.5rem 1rem;
+
+      li {
+        background-color: ${(props) => props.theme.color.greyWhite};
+        margin: 0.5rem 0;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        border: 2px solid ${(props) => props.theme.color.black};
+
+        a {
+          color: ${(props) => props.theme.color.red};
+          padding: 1rem;
+        }
+
+        &:hover {
+          background-color: rgb(158, 148, 148);
+        }
+      }
     }
 
     a {
