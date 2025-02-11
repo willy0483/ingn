@@ -41,9 +41,9 @@ export const NavbarStyled = styled.nav`
         transition: background-color 0.3s ease;
         border: none;
 
-        a{
-        color: ${(props) => props.theme.color.white};
-      }
+        a {
+          color: ${(props) => props.theme.color.white};
+        }
 
         &:hover {
           background-color: rgb(70, 70, 70);
@@ -57,10 +57,10 @@ export const NavbarStyled = styled.nav`
       border-left: 1px solid ${(props) => props.theme.color.black};
       border-right: 1px solid ${(props) => props.theme.color.black};
     }
-    li:first-of-type{
+    li:first-of-type {
       border-left: 2px solid ${(props) => props.theme.color.black};
     }
-    li:last-of-type{
+    li:last-of-type {
       border-right: 2px solid ${(props) => props.theme.color.black};
     }
 
@@ -70,7 +70,7 @@ export const NavbarStyled = styled.nav`
       font-size: 1rem;
       width: 100%;
       transition: color 0.3s ease;
-      padding: 0.5rem 1rem;  
+      padding: 0.5rem 1rem;
     }
   }
 

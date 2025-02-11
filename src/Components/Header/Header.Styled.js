@@ -10,7 +10,7 @@ export const HeaderStyled = styled.header`
   position: relative;
   height: 75px;
 
-  a{
+  a {
     text-decoration: none;
     color: ${(props) => props.theme.color.red};
   }

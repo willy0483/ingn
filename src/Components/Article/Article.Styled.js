@@ -1,36 +1,32 @@
 import styled from "styled-components";
 
 export const ArticleContainer = styled.article`
-  padding: 2rem;
   background-color: ${(props) => props.theme.color.white};
-  border: 1px solid ${(props) => props.theme.color.grayLight};
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  a {
+    text-decoration: none;
+  }
 
   figure {
     margin: 0;
-    position: relative;
-    height: 100%; /* Ensure the figure takes the full height of the container */
-    
+    height: 100%;
+
     img {
       width: 100%;
-      height: 100%; /* Ensure the image takes the full height of the figure */
+      height: 100%;
       display: block;
-      object-fit: cover; /* Ensure the image covers the figure */
+      object-fit: cover;
     }
 
     figcaption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      color: ${(props) => props.theme.color.white};
+      color: ${(props) => props.theme.color.black};
       padding: 1rem;
       box-sizing: border-box;
-
-      h2, h3 {
+      h2,
+      h3 {
         margin: 0;
       }
 
@@ -45,13 +41,19 @@ export const ArticleContainer = styled.article`
   }
 `;
 
-export const AuthorName = styled.div`
-  font-weight: bold;
-`;
+export const AuthorName = styled.div``;
 
 export const DateAuthorContainer = styled.div`
   display: flex;
   gap: 0.2rem;
   align-items: center;
   font-size: 0.9rem;
+  color: red;
+  margin: 0.5rem 0;
+`;
+
+export const ReadMore = styled.div`
+  p {
+    text-decoration: underline;
+  }
 `;
