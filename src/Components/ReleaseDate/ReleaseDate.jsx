@@ -1,5 +1,4 @@
-import { ReleaseDateStyled } from "./ReleaseDate.Styled";
-
+import { ReleaseDateStyled } from "./releaseDate.Styled";
 export const ReleaseDate = ({ dateString }) => {
   const date = new Date(dateString);
   const options = {
@@ -7,8 +6,7 @@ export const ReleaseDate = ({ dateString }) => {
     month: "2-digit",
     year: "numeric",
   };
-  const formattedDate = new Intl.DateTimeFormat('en-GB', options).format(date);
-  const formattedDateWithPrefix = `D. ${formattedDate.replace(/\//g, '-')}`;
-
+  const formattedDate = new Intl.DateTimeFormat("en-GB", options).format(date);
+  const formattedDateWithPrefix = `D. ${formattedDate.replace(/\//g, "-")}`;
   return <ReleaseDateStyled>{formattedDateWithPrefix}</ReleaseDateStyled>;
 };

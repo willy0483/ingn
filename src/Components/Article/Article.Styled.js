@@ -51,7 +51,6 @@ export const DateAuthorContainer = styled.div`
   color: red;
   margin: 0.5rem 0;
 `;
-
 export const ReadMore = styled.div`
   p {
     text-decoration: underline;

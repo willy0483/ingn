@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { client } from "../../Client/ContentfulClient";
+import { client } from "../../client/contentfulClient";
 import { NavLink } from "react-router-dom";
 
-import { Article } from "../../Components/Article/Article";
-import { AuthorName, DateAuthorContainer, ReadMore } from "../../Components/Article/Article.Styled";
-import { ReleaseDate } from "../../Components/ReleaseDate/ReleaseDate";
-import { Container } from "../../Components/Container/Container";
-import { GridContainer } from "../../Components/GridContainer/GridContainer";
-import { GridItem, NeedLogIn } from "../../Components/GridContainer/GridContainer.Styled";
+import { Article } from "../../components/article/article";
+import { AuthorName, DateAuthorContainer, ReadMore } from "../../components/article/article.Styled";
+import { ReleaseDate } from "../../components/releaseDate/releaseDate";
+import { Container } from "../../components/container/container";
+import { GridContainer } from "../../components/gridContainer/gridContainer";
+import { GridItem, NeedLogIn } from "../../components/gridContainer/gridContainer.Styled";
 
 import { useAuth0 } from "@auth0/auth0-react";
 

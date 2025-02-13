@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { client } from "../../Client/ContentfulClient";
+import { client } from "../../client/contentfulClient";
 import { useParams } from "react-router-dom";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { Details } from "../../Components/Details/Details";
-import { Container } from "../../Components/Container/Container";
-import { AuthorName, DateAuthorContainer } from "../../Components/Article/Article.Styled";
-import { ReleaseDate } from "../../Components/ReleaseDate/ReleaseDate";
+import { Details } from "../../components/details/details";
+import { Container } from "../../components/container/container";
+import { AuthorName, DateAuthorContainer } from "../../components/article/article.Styled";
+import { ReleaseDate } from "../../components/releaseDate/releaseDate";
 
 export const Detailspage = () => {
   const { articleID } = useParams();

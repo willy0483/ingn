@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const LoginButtonStyled = styled.button`
   padding: 10px 20px;
   font-size: 16px;

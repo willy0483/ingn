@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import { client } from "../../Client/ContentfulClient";
+import { client } from "../../client/contentfulClient";
 import { useParams } from "react-router-dom";
-import { Category } from "../../Components/Category/Category";
-import { CategoryHeader } from "../../Components/Category/Category.Styled";
-import { Article } from "../../Components/Article/Article";
-import { AuthorName, DateAuthorContainer, ReadMore } from "../../Components/Article/Article.Styled";
-import { ReleaseDate } from "../../Components/ReleaseDate/ReleaseDate";
-import { Container } from "../../Components/Container/Container";
-import { GridContainer } from "../../Components/GridContainer/GridContainer";
+import { Category } from "../../components/category/category";
+import { CategoryHeader } from "../../components/category/category.Styled";
+import { Article } from "../../components/article/article";
+import { AuthorName, DateAuthorContainer, ReadMore } from "../../components/article/article.Styled";
+import { ReleaseDate } from "../../components/releaseDate/releaseDate";
+import { Container } from "../../components/container/container";
+import { GridContainer } from "../../components/gridContainer/gridContainer";
 import { NavLink } from "react-router-dom";
-import { GridItem } from "../../Components/GridContainer/GridContainer.Styled";
+import { GridItem } from "../../components/gridContainer/gridContainer.Styled";
 
 export const CategoryPage = () => {
   const { category } = useParams();

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const NavbarStyled = styled.nav`
   grid-area: navbar;
   display: flex;
@@ -13,7 +12,6 @@ export const NavbarStyled = styled.nav`
     font-size: 1.5rem;
     cursor: pointer;
   }
-
   ul {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     flex-direction: column;

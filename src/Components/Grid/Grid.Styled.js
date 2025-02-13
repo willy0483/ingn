@@ -3,11 +3,9 @@ import styled from "styled-components";
 export const GridStyled = styled.div`
   display: grid;
   height: 100vh;
-
   grid-template-columns: ${(props) => props.theme.grid.mobile.primary.columns};
   grid-template-rows: ${(props) => props.theme.grid.mobile.primary.rows};
   grid-template-areas: ${(props) => props.theme.grid.mobile.primary.areas};
-
   @media screen and (min-width: ${(props) => props.theme.grid.breakpoints.s}) {
     grid-template-columns: ${(props) => props.theme.grid.tablet.primary.columns};
     grid-template-rows: ${(props) => props.theme.grid.tablet.primary.rows};

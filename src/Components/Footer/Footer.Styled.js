@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ResetList } from "../../Styles/Mixins";
+import { ResetList } from "../../Styles/mixins";
 
 export const FooterStyled = styled.footer`
   grid-area: footer;
@@ -14,7 +14,6 @@ export const FooterStyled = styled.footer`
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
-
   ul {
     ${ResetList}
     li:first-of-type {

@@ -1,12 +1,10 @@
 import React from "react";
-import { NavbarStyled } from "./Navbar.Styled";
+import { NavbarStyled } from "./navbar.Styled";
 import { NavLink } from "react-router-dom";
 
 import { useAuth0 } from "@auth0/auth0-react";
-
 export const Navbar = ({ isOpen }) => {
   const { isAuthenticated } = useAuth0();
-
   return (
     <NavbarStyled isOpen={isOpen}>
       <ul>

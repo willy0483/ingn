@@ -1,7 +1,7 @@
-import { UserStyled } from "./User.Styled";
+import { UserStyled } from "./user.Styled";
 import { useAuth0 } from "@auth0/auth0-react";
 
-import { LoginButton } from "../LoginButton/LoginButton";
+import { LoginButton } from "../loginButton/loginButton";
 import { NavLink } from "react-router-dom";
 
 export const User = () => {

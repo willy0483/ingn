@@ -1,11 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-
-import { HomePage } from "../Pages/HomePage/HomePage";
-import { Detailspage } from "../Pages/Detailspage/Detailspage";
-import { CategoryPage } from "../Pages/CategoryPage/CategoryPage";
-import { MainLayout } from "../Layout/MainLayout";
-import { ProfilePage } from "../Pages/ProfilePage/ProfilePage";
-
+import { HomePage } from "../pages/homePage/homePage";
+import { Detailspage } from "../pages/detailspage/detailspage";
+import { CategoryPage } from "../pages/categoryPage/categoryPage";
+import { MainLayout } from "../layout/mainLayout";
+import { ProfilePage } from "../pages/profilePage/profilePage";
 export const AppRoutes = () => {
   return (
     <Routes>

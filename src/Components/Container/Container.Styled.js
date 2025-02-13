@@ -7,7 +7,6 @@ export const ContainerStyled = styled.section`
   margin: 1rem auto;
   padding: 0 2rem;
 
-
   &.center {
     width: 1200px;
   }

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const DetailsStyled = styled.section`
   background-color: ${(props) => props.theme.color.white};
   img {

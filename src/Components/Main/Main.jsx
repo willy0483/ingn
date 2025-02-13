@@ -1,8 +1,5 @@
-import { MainStyled } from "./Main.Styled";
+import { MainStyled } from "./main.Styled";
 
-
-export const Main = ({children}) =>{
-    return(
-        <MainStyled>{children}</MainStyled>
-    )
-}
+export const Main = ({ children }) => {
+  return <MainStyled>{children}</MainStyled>;
+};

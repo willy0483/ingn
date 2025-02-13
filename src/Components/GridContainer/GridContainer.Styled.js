@@ -12,7 +12,6 @@ export const GridItem = styled.div`
     }
   `}
 `;
-
 export const GridContainerStyled = styled.div`
   display: grid;
   grid-template-areas:
@@ -26,12 +25,10 @@ export const GridContainerStyled = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: max-content;
   gap: 20px;
-
   figure {
     height: 315px;
     display: grid;
   }
-
   .grid-item-0 {
     grid-area: item;
     figure {

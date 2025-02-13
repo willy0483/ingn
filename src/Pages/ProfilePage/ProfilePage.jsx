@@ -1,6 +1,6 @@
-import { Profile } from "../../Components/Profile/Profile";
-import { Container } from "../../Components/Container/Container";
-import { ProfileContainer } from "../../Components/Profile/Profile.Styled";
+import { Profile } from "../../components/profile/profile";
+import { Container } from "../../components/container/container";
+import { ProfileContainer } from "../../components/profile/profile.Styled";
 
 export const ProfilePage = () => {
   return (

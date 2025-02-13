@@ -1,4 +1,4 @@
-import { ContainerStyled } from "./Container.styled";
+import { ContainerStyled } from "./container.Styled";
 
 export const Container = ({ bgcolor, height, width, className, children }) => {
   return (

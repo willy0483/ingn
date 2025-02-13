@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const UserStyled = styled.div`
   grid-area: user;
   display: flex;
@@ -13,7 +12,6 @@ export const UserStyled = styled.div`
     object-fit: cover;
     border: 0.1rem solid ${(props) => props.theme.color.black};
   }
-
   @media screen and (max-width: ${(props) => props.theme.grid.breakpoints.s}) {
     display: none;
   }

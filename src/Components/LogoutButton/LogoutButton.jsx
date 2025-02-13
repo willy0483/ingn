@@ -1,4 +1,4 @@
-import { LogoutButtonStyled } from "./LogoutButton.Styled";
+import { LogoutButtonStyled } from "./logoutButton.Styled";
 import { useAuth0 } from "@auth0/auth0-react";
 
 export const LogoutButton = () => {

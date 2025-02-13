@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const ProfileStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@ export const ProfileStyled = styled.div`
   width: 400px;
   margin: 0 auto;
   text-align: center;
-
   figure {
     display: flex;
     flex-direction: column;
