@@ -1,4 +1,5 @@
 import * as contentful from "contentful";
+import { createClient as createManagementClient } from "contentful-management";
 
 export const client = contentful.createClient({
   space: import.meta.env.VITE_PUBLIC_SPACE_ID,

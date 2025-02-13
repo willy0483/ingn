@@ -161,3 +161,5 @@ export const GridContainerStyled = styled.div`
     }
   }
 `;
+
+export const NeedLogIn = styled.div``;

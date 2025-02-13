@@ -34,14 +34,11 @@ export const NavbarStyled = styled.nav`
     li {
       display: flex;
       transition: transform 0.3s ease-in-out;
-      border-left: 1px solid ${(props) => props.theme.color.black};
-      border-right: 1px solid ${(props) => props.theme.color.black};
-    }
-    li:first-of-type {
-      border-left: 2px solid ${(props) => props.theme.color.black};
-    }
-    li:last-of-type {
-      border-right: 2px solid ${(props) => props.theme.color.black};
+      a {
+        &.active {
+          border-bottom: 2px solid ${(props) => props.theme.color.red};
+        }
+      }
     }
 
     @media screen and (max-width: ${(props) => props.theme.grid.breakpoints.s}) {
@@ -57,6 +54,12 @@ export const NavbarStyled = styled.nav`
         a {
           color: ${(props) => props.theme.color.red};
           padding: 1rem;
+          &.active {
+            border: none;
+          }
+        }
+        button {
+          color: ${(props) => props.theme.color.red};
         }
 
         &:hover {
@@ -78,6 +81,10 @@ export const NavbarStyled = styled.nav`
   @media screen and (min-width: ${(props) => props.theme.grid.breakpoints.s}) {
     flex-direction: row;
     align-items: center;
+
+    li:nth-child(8) {
+      display: none;
+    }
 
     .burger-menu {
       display: none;
