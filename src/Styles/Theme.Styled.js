@@ -5,12 +5,13 @@ export const theme = {
     background: "#242424",
     red: "#C52525",
     greyWhite: "#F6F3F3",
+    blue: "#0056b3",
   },
   fonts: ["Oswald", "Open Sans"],
   grid: {
     breakpoints: {
       xs: "320px",
-      s: "480px",
+      s: "570px",
       m: "768px",
       l: "992px",
       xl: "1200px",

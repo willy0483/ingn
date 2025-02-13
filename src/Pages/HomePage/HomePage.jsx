@@ -8,8 +8,11 @@ import { ReleaseDate } from "../../components/releaseDate/releaseDate";
 import { Container } from "../../components/container/container";
 import { GridContainer } from "../../components/gridContainer/gridContainer";
 import { GridItem, NeedLogIn } from "../../components/gridContainer/gridContainer.Styled";
+import { Loading } from "../../components/loading/loading";
 
 import { useAuth0 } from "@auth0/auth0-react";
+
+import { LoginButton } from "../../components/loginButton/loginButton";
 
 export const HomePage = () => {
   const [articleData, setArticleData] = useState();
@@ -24,6 +27,14 @@ export const HomePage = () => {
       .then((data) => setArticleData(data))
       .catch((error) => console.log(error));
   }, []);
+
+  if (isLoading) {
+    return (
+      <Container width={"1200px"}>
+        <Loading />
+      </Container>
+    );
+  }
 
   console.log(articleData);
 
@@ -60,7 +71,10 @@ export const HomePage = () => {
                 <GridItem index={index} key={article.sys.id} className={className}>
                   <Article>
                     <NeedLogIn className={`need-login-${index}`}>
-                      <p>Log ind for at se artikler</p>
+                      <div>
+                        <p>Log ind for at se artikler</p>
+                        <LoginButton />
+                      </div>
                     </NeedLogIn>
                   </Article>
                 </GridItem>

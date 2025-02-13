@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ResetList } from "../../Styles/mixins";
+import { ResetList } from "../../styles/mixins";
 
 export const FooterStyled = styled.footer`
   grid-area: footer;
@@ -34,9 +34,22 @@ export const FooterStyled = styled.footer`
   @media screen and (max-width: ${(props) => props.theme.grid.breakpoints.m}) {
     display: grid;
     grid-template-columns: 1fr;
+
     div {
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        li:first-of-type {
+          font-size: 1.5rem;
+          text-decoration: underline;
+          margin: 0;
+        }
+      }
     }
   }
 `;

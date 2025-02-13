@@ -3,6 +3,8 @@ import { ProfileStyled, Notauthenticated, Roles } from "./profile.Styled";
 import { useAuth0 } from "@auth0/auth0-react";
 import { LogoutButton } from "../logoutButton/logoutButton";
 import { LoginButton } from "../loginButton/loginButton";
+import { Container } from "../container/container";
+import { Loading } from "../loading/loading";
 
 export const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -11,7 +13,11 @@ export const Profile = () => {
   console.log(roles);
 
   if (isLoading) {
-    return <div>Loading ...</div>;
+    return (
+      <Container width={"1200px"}>
+        <Loading />
+      </Container>
+    );
   }
 
   if (!isAuthenticated) {

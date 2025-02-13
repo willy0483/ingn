@@ -9,6 +9,10 @@ export const User = () => {
   const roles = user ? user["http://localhost/roles"] : [];
   console.log(roles);
 
+  if (isLoading) {
+    return;
+  }
+
   return (
     <UserStyled>
       {isAuthenticated ? (
