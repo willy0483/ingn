@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./app.jsx";
+import App from "./App.jsx";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Styles/global.styled.js";
 import { theme } from "./Styles/theme.Styled.js";
